@@ -4,9 +4,7 @@
     <template v-for="habit in habits">
       <li :key="habit.id">
         <div class="name">
-          <strong>
-            {{ habit.name }}
-          </strong>
+          {{ habit.name }}
         </div>
         <div class="goal" v-if="habit.goal">
           <span class="today" v-if="habit.history" style="margin-right:4px">
@@ -164,7 +162,7 @@ li {
 }
 
 .name {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .goal {
