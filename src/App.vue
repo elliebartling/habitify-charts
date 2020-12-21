@@ -106,7 +106,7 @@ export default {
           // Convert to miles
           return Math.round(data[0].value / 1609)
         default:
-          return "blank"
+          return data[0].value
       }
     },
     async getHabitHistory(id) {
@@ -146,11 +146,12 @@ export default {
 #app,
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: grayscale;
   color: rgb(55, 53, 47);
   /* margin-top: 60px; */
   background-color: #ffffff;
+  font-size: 16px;
 }
 
 li {
@@ -162,11 +163,16 @@ li {
   margin-bottom: 0.5rem;
 }
 
+.name {
+
+}
+
 .goal {
-  color: rgba(55, 53, 47, 0.6);
   margin-left: 1rem;
+  /* letter-spacing: -0.02em; */
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 14px;
 }
 </style>
