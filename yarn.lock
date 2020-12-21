@@ -8430,6 +8430,11 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-radial-progress@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/vue-radial-progress/-/vue-radial-progress-0.3.2.tgz#3a13f94435c3a5010935c1ff3d4ee5c93bd46d15"
+  integrity sha512-F4eA9IFqoY5ZPBJNsqIu3C8J6TQ/5aQxUOAy+6wjVOvK+ljjs/8g8gUpy5CE2/THDH68+avwqov3ibaG1AyZSQ==
+
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"

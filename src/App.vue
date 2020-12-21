@@ -15,6 +15,17 @@
           <span class="today-goal">
             {{ habit.goal.value }} {{ habit.goal.unit_type }} {{ habit.goal.periodicity }}
           </span>
+          <radial-progress-bar
+            style="margin-left: 8px;"
+            :diameter="20"
+            :completed-steps="getTodaysNumbers(habit.history)"
+            :total-steps="habit.goal.value"
+            start-color="#2faadc"
+            stop-color="#2faadc"
+            :stroke-width="3"
+            :inner-stroke-width="3"
+            inner-stroke-color="#eeeeee"
+          />
         </div>
       </li>
     </template>
@@ -27,6 +38,7 @@ import map from 'lodash/map'
 import find from 'lodash/find'
 import filter from 'lodash/filter'
 import dayjs  from 'dayjs'
+import RadialProgressBar from 'vue-radial-progress'
 
 export default {
   name: 'App',
@@ -38,6 +50,9 @@ export default {
       today: {},
       todayString: ''
     }
+  },
+  components: {
+    RadialProgressBar
   },
   watch: {
     async habitifyKey(newVal) {
@@ -148,5 +163,8 @@ li {
 .goal {
   color: rgba(55, 53, 47, 0.6);
   margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 </style>

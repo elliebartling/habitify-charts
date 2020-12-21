@@ -17,6 +17,7 @@
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2",
     "vue": "^2.6.11",
+    "vue-radial-progress": "^0.3.2",
     "vue-tailwind": "^2.0.0"
   },
   "devDependencies": {
