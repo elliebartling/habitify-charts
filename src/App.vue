@@ -9,7 +9,7 @@
           </strong>
         </div>
         <div class="goal" v-if="habit.goal">
-          <span class="today" v-if="habit.history">
+          <span class="today" v-if="habit.history" style="margin-right:4px">
             {{ getTodaysNumbers(habit.history) }} /
           </span>
           <span class="today-goal">
@@ -24,7 +24,7 @@
             stop-color="#2faadc"
             :stroke-width="3"
             :inner-stroke-width="3"
-            inner-stroke-color="#eeeeee"
+            inner-stroke-color="#e0dfde"
           />
         </div>
       </li>
@@ -148,7 +148,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgb(55, 53, 47);
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  background-color: #ffffff;
 }
 
 li {
