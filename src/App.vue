@@ -164,7 +164,7 @@ li {
 }
 
 .name {
-
+  font-weight: 400;
 }
 
 .goal {
